@@ -8,22 +8,6 @@
   * ul {
     list-style-type: none;
   }
-   
-  .gap10 {
-    gap: 10px;
-}
-
-.gap30 {
-    gap: 30px;
-}
-
-.gap50 {
-    gap: 50px;
-  }
-
-  .colorWhite {
-    color: white;
-  }
 
   .buttonPrimary {
     background-color: #23a6f0;
@@ -46,11 +30,6 @@
     font-size: 40px;
   }
 
-  .loginButton {
-    border: 0;
-    background: inherit;  
-  }
-
   .titleLogo {
     font-size: 24px;
     font-weight: 700;
@@ -63,16 +42,6 @@
 
   .description {
     font-size: 20px;
-  }
-  
-  .section2 {
-    height: 435px;
-    background-color: #252B42;
-  }
-
-
-  .section2 .cardDescription {
-    font-size: 14px;
   }
   
   .section3 {
