@@ -1,4 +1,4 @@
-# bootstrap-website
+# tailwind-website
 
 ## UI Design Credit
 
