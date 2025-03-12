@@ -91,13 +91,13 @@
 
 /* ====================================== section-4 =======================================- */
 
-.section-4 .industryContainer button {
+/* .section-4 .industryContainer button {
   background-color: #23a6f0 !important;
-}
+} */
 
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ section-5 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 
-.section-5 .priceSection h2 {
+/* .section-5 .priceSection h2 {
   font-size: 40px;
   font-weight: bold;
 }
@@ -125,18 +125,18 @@
   font-size: 16px;
   font-weight: bold;
   color: #737373;
-}
+} */
 
 /* ================================= section-6 ==================================- */
 
-.footer * {
+/* .footer * {
   background-color: #fafafa;
 }
 
 .footer .upperSection h2 {
   font-size: 24px;
   font-weight: bold;
-}
+} */
   
   /* ########## */
   /* RESPONSIVE */

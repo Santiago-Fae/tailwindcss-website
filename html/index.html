@@ -1,589 +1,1103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-        <link rel="stylesheet" href="../css/main.css" />
-        <style>
-            @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-        </style>
-        <title>Bootstrap</title>
-    </head>
-<body>
-  <!-- Santiago Starts here -->
-  <div class="firstPart">
-    <header class="header">
-      <div class="pt-4 px-2 pb-5">
-        <div class="container">
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-              <a href="./">
-                <h1 class="titleLogo text-white">BrandName</h1>
-              </a>
-              <div class="d-none ms-5 d-sm-flex justify-content-end align-items-center d-md-block">
-                <nav>
-                  <ul class="d-flex gap-3 text-secondary mb-0">
-                    <li>
-                      <a href="#" class="text-decoration-none text-white">Home</a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-decoration-none text-white">Product</a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-decoration-none text-white">Pricing</a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-decoration-none text-white">Contact</a>
-                    </li>
-                  </ul>
-                </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- <link rel="stylesheet" href="../css/main.css" /> -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <!-- Santiago Starts here -->
+    <!-- <div class="firstPart">
+      <header class="header">
+        <div class="pt-4 px-2 pb-5">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <a href="./">
+                  <h1 class="titleLogo text-white">BrandName</h1>
+                </a>
+                <div
+                  class="d-none ms-5 d-sm-flex justify-content-end align-items-center d-md-block"
+                >
+                  <nav>
+                    <ul class="d-flex gap-3 text-secondary mb-0">
+                      <li>
+                        <a href="#" class="text-decoration-none text-white"
+                          >Home</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-decoration-none text-white"
+                          >Product</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-decoration-none text-white"
+                          >Pricing</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-decoration-none text-white"
+                          >Contact</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
-            </div>
-            <div class="d-none d-sm-flex">
-              <button class="loginButton text-white me-4">Login</button>
-              <button class="buttonPrimary text-white btn btn-lg px-3 py-2">Become a member <img class="ms-1" src="../assets/header/arrow.svg" alt=""></button>
-            </div>
-            <div class="d-flex d-sm-none">
-              <button class="btn btn-lg text-white">
-                <img src="../assets/header/icon_search.png" alt="">
-              </button>
-              <button class="btn btn-lg text-white">
-                <img src="../assets/header/icon_shoppingCart.png" alt="">
-              </button>
-              <label class="btn btn-lg text-white" for="MenuHamburguer">
-                <img src="../assets/header/icon_menu.png" alt="">
-              </label>
-<!--               <label for="MenuHamburguer" class="">
+              <div class="d-none d-sm-flex">
+                <button class="loginButton text-white me-4">Login</button>
+                <button class="buttonPrimary text-white btn btn-lg px-3 py-2">
+                  Become a member
+                  <img class="ms-1" src="../assets/header/arrow.svg" alt="" />
+                </button>
+              </div>
+              <div class="d-flex d-sm-none">
+                <button class="btn btn-lg text-white">
+                  <img src="../assets/header/icon_search.png" alt="" />
+                </button>
+                <button class="btn btn-lg text-white">
+                  <img src="../assets/header/icon_shoppingCart.png" alt="" />
+                </button>
+                <label class="btn btn-lg text-white" for="MenuHamburguer">
+                  <img src="../assets/header/icon_menu.png" alt="" />
+                </label> -->
+    <!--               <label for="MenuHamburguer" class="">
                 <img src="./assets/hamburguer-menu.svg" alt="Menu">
               </label> -->
-              <input type="checkbox" id="MenuHamburguer" class="d-none">
+    <!-- <input type="checkbox" id="MenuHamburguer" class="d-none" />
+              </div>
+            </div>
+
+            <div class="hideMenu">
+              <div class="menuClose">
+                <label for="MenuHamburguer">
+                  <img src="./assets/close-icon.svg" alt="" />
+                </label>
+              </div>
+              <nav class="fullScreenMenu">
+                <ul>
+                  <li class=""><a class="selected" href="#">Home</a></li>
+                  <li><a href="#">Product</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
             </div>
           </div>
-          
-          <div class="hideMenu">
-            <div class="menuClose">
-              <label for="MenuHamburguer">
-                <img src="./assets/close-icon.svg" alt="">
-              </label>
+        </div>
+      </header>
+      <section class="p-5 mt-1 mt-sm-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h1 class="title text-white text-center text-sm-start">
+                We Ensure A Best Insurance Service
+              </h1>
+              <p
+                class="description text-white mt-5 mb-4 col-sm-8 text-center text-sm-start"
+              >
+                We know how large objects will act, but things on a small scale.
+              </p>
+              <div
+                class="d-flex align-items-center justify-content-center justify-content-sm-start flex-sm-row flex-column gap-2"
+              >
+                <button
+                  class="btn col-6 col-sm-auto buttonPrimary text-white btn-lg rounded-pill px-4"
+                >
+                  Get Quote Now
+                </button>
+                <button
+                  class="btn col-6 col-sm-auto buttonTransparent btn-lg rounded-pill px-4"
+                >
+                  Learn More
+                </button>
+              </div>
             </div>
-            <nav class="fullScreenMenu">
-              <ul>
-                <li class=""><a class="selected" href="#">Home</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </nav>
-          </div>	
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="section2 py-5 py-sm-0">
+      <div class="container h-100">
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-center gap-4 h-100 align-items-center"
+        >
+          <div class="d-flex flex-column align-items-center col-sm-3">
+            <img src="../assets/section-2/icon_wallet.png" alt="" />
+            <p class="text-white mt-4 mb-2 mt-sm-5 mb-sm-3 fw-bold">
+              Peace of Mind
+            </p>
+            <p class="text-white text-center cardDescription col-8">
+              So it really behaves like neither. Now we have given up.
+            </p>
+          </div>
+          <div class="d-flex flex-column align-items-center col-sm-3">
+            <img src="../assets/section-2/icon_list.png" alt="" />
+            <p class="text-white mt-4 mb-2 mt-sm-5 mb-sm-3 fw-bold">
+              Set For Life
+            </p>
+            <p class="text-white text-center cardDescription col-8">
+              They were used to create the machines that launched
+            </p>
+          </div>
+          <div class="d-flex flex-column align-items-center col-sm-3">
+            <img src="../assets/section-2/icon_people.png" alt="" />
+            <p class="text-white mt-4 mb-2 mt-sm-5 mb-sm-3 fw-bold">
+              100% Satisfaction
+            </p>
+            <p class="text-white text-center cardDescription col-8">
+              So it really behaves like neither. Now we have given up.
+            </p>
+          </div>
         </div>
       </div>
-    </header>
-    <section class="p-5 mt-1 mt-sm-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <h1 class="title text-white text-center text-sm-start">We Ensure A Best Insurance Service</h1>
-            <p class="description text-white mt-5 mb-4 col-sm-8 text-center text-sm-start">We know how large objects will act, but things on a small scale.</p>
-            <div class="d-flex align-items-center justify-content-center justify-content-sm-start flex-sm-row flex-column gap-2">
-              <button class="btn col-6 col-sm-auto buttonPrimary text-white btn-lg rounded-pill px-4">Get Quote Now</button>
-              <button class="btn col-6 col-sm-auto buttonTransparent btn-lg rounded-pill px-4">Learn More</button>
+    </section>
+    <section class="section3">
+      <div class="container h-100">
+        <div
+          class="d-flex flex-column justify-content-center gap-4 py-5 align-items-center"
+        >
+          <h2 class="fontSize40 text-white fw-bold d-sm-block d-none">
+            Industry
+          </h2>
+          <h2 class="fontSize40 text-white fw-bold d-sm-none d-block">
+            What Clients Say
+          </h2>
+          <p class="text-white w-50 text-center">
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+        </div>
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-center gap-5 align-items-center pb-5"
+        >
+          <div
+            class="d-flex flex-column align-items-start col-sm-5 bg-light px-5 py-4 me-sm-4"
+          >
+            <div class="d-flex align-items-center gap-4 mb-4">
+              <img
+                src="../assets/section-3/user.1.png"
+                class="mNegative d-none d-sm-block"
+                alt=""
+              />
+              <div class="d-flex flex-column justify-content-center">
+                <h3>Regina Miles</h3>
+                <p class="mb-0">Designer</p>
+              </div>
+            </div>
+            <img src="../assets/section-3/stars.png" alt="" />
+            <p class="mt-3 col-11 col-sm-auto">
+              This proved to be impossible using the traditional concepts of
+              space and time. Einstein developed a new view of time first and
+              then space. This proved to be impossible using the traditional
+              concepts of space and time. Einstein developed a new view of time
+              first and then space.
+            </p>
+          </div>
+          <div
+            class="d-flex flex-column align-items-start col-sm-5 bg-light px-5 py-4 ms-sm-4"
+          >
+            <div class="d-flex align-items-center gap-4 mb-4">
+              <img
+                src="../assets/section-3/user.2.png"
+                class="mNegative d-none d-sm-block"
+                alt=""
+              />
+              <div class="d-flex flex-column justify-content-center">
+                <h3>Regina Miles</h3>
+                <p class="mb-0">Designer</p>
+              </div>
+            </div>
+            <img src="../assets/section-3/stars.png" alt="" />
+            <p class="mt-3 col-11 col-sm-auto">
+              This proved to be impossible using the traditional concepts of
+              space and time. Einstein developed a new view of time first and
+              then space. This proved to be impossible using the traditional
+              concepts of space and time. Einstein developed a new view of time
+              first and then space.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Jay Starts here -->
+    <!-- section-4 -->
+    <section class="bg-[#252b42] py-[112px] px-[15px]">
+      <div class="p-0">
+        <div>
+          <h2
+            class="block lg:hidden font-bold text-white text-center leading-normal text-[40px] tracking-[0.2px] mb-[10px] px-[59px]"
+          >
+            We Are Optimists Who Love To Work Together
+          </h2>
+          <h2
+            class="hidden lg:block font-bold text-white text-center leading-normal text-[40px] tracking-[0.2px] mb-[10px] px-[59px]"
+          >
+            Industry
+          </h2>
+          <p
+            class="block lg:hidden text-white text-center leading-snug font-medium text-[14px] tracking-[0.2px] mb-[60px] px-[34px]"
+          >
+            Problems trying to resolve<br />
+            the conflict between the two major realms of Classical physics:
+            Newtonian mechanics
+          </p>
+          <p
+            class="hidden lg:block text-white text-center leading-snug font-medium text-[14px] tracking-[0.2px] mb-[96px] px-[34px]"
+          >
+            Problems trying to resolve the conflict between<br />
+            the two major realms of Classical physics: Newtonian mechanics
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+          <div class="mb-4">
+            <div class="relative h-full">
+              <img
+                src="../assets/section-4/post-1.svg"
+                alt="post-1"
+                class="w-full border-0 rounded-none"
+                style="
+                  background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 14.58%,
+                    #383838d6 100%
+                  );
+                "
+              />
+              <div class="absolute inset-0 flex flex-col justify-end gap-3">
+                <h6
+                  class="font-semibold text-white leading-normal mb-0 text-[14px] tracking-[0.2px]"
+                >
+                  Tax Management
+                </h6>
+                <h3
+                  class="font-bold text-white leading-normal mb-0 text-2xl tracking-[0.1px]"
+                >
+                  Life Tips From Top Ten Adventure Travelers
+                </h3>
+                <button
+                  type="button"
+                  class="rounded-[37px] bg-[#23a6f0] max-w-[165px] max-h-[42px] text-[14px] tracking-[0.2px] py-[10px] px-[34px] font-bold"
+                >
+                  View Project
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="relative h-full">
+              <img
+                src="../assets/section-4/post-2.svg"
+                alt="post-2"
+                class="w-full border-0 rounded-none"
+                style="
+                  background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 14.58%,
+                    #383838d6 100%
+                  );
+                "
+              />
+              <div class="absolute inset-0 flex flex-col justify-end gap-3">
+                <h6
+                  class="font-semibold text-white leading-normal mb-0 text-[14px] tracking-[0.2px]"
+                >
+                  Tax Management
+                </h6>
+                <h3
+                  class="font-bold text-white leading-normal mb-0 text-2xl tracking-[0.1px]"
+                >
+                  Life Tips From Top Ten Adventure Travelers
+                </h3>
+                <button
+                  type="button"
+                  class="rounded-[37px] bg-[#23a6f0] max-w-[165px] max-h-[42px] text-[14px] tracking-[0.2px] py-[10px] px-[34px] font-bold"
+                >
+                  View Project
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="relative h-full">
+              <img
+                src="../assets/section-4/post-3.svg"
+                alt="post-3"
+                class="w-full border-0 rounded-none"
+                style="
+                  background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 14.58%,
+                    #383838d6 100%
+                  );
+                "
+              />
+              <div class="absolute inset-0 flex flex-col justify-end gap-3">
+                <h6
+                  class="font-semibold text-white leading-normal mb-0 text-[14px] tracking-[0.2px]"
+                >
+                  Tax Management
+                </h6>
+                <h3
+                  class="font-bold text-white leading-normal mb-0 text-2xl tracking-[0.1px]"
+                >
+                  Life Tips From Top Ten Adventure Travelers
+                </h3>
+                <button
+                  type="button"
+                  class="rounded-[37px] bg-[#23a6f0] max-w-[165px] max-h-[42px] text-[14px] tracking-[0.2px] py-[10px] px-[34px] font-bold"
+                >
+                  View Project
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="relative h-full">
+              <img
+                src="../assets/section-4/post-4.svg"
+                alt="post-4"
+                class="w-full border-0 rounded-none"
+                style="
+                  background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 14.58%,
+                    #383838d6 100%
+                  );
+                "
+              />
+              <div class="absolute inset-0 flex flex-col justify-end gap-3">
+                <h6
+                  class="font-semibold text-white leading-normal mb-0 text-[14px] tracking-[0.2px]"
+                >
+                  Tax Management
+                </h6>
+                <h3
+                  class="font-bold text-white leading-normal mb-0 text-2xl tracking-[0.1px]"
+                >
+                  Life Tips From Top Ten Adventure Travelers
+                </h3>
+                <button
+                  type="button"
+                  class="rounded-[37px] bg-[#23a6f0] max-w-[165px] max-h-[42px] text-[14px] tracking-[0.2px] py-[10px] px-[34px] font-bold"
+                >
+                  View Project
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  </div>
-  <section class="section2 py-5 py-sm-0">
-    <div class="container h-100">
-      <div class="d-flex flex-column flex-sm-row justify-content-center gap-4 h-100 align-items-center">
-        <div class="d-flex flex-column align-items-center col-sm-3">
-          <img src="../assets/section-2/icon_wallet.png" alt="">
-          <p class="text-white mt-4 mb-2 mt-sm-5 mb-sm-3 fw-bold">Peace of Mind</p>
-          <p class="text-white text-center cardDescription col-8">So it really behaves like neither. Now we have given up.</p>
+
+    <!-- section-5 -->
+    <section class="bg-[#252b42] pt-[30px] pr-[42px] pb-[109px] pl-[42px] lg:py-[112px] lg:px-[195px]">
+      <div class="p-0">
+        <div>
+          <h2
+            class="font-bold text-white text-center leading-normal text-[40px] tracking-[0.2px] mb-[10px] px-[94px]"
+          >
+            Pricing
+          </h2>
+          <p
+            class="text-white text-center leading-snug font-medium text-[14px] tracking-[0.2px] mb-[60px] px-[34px] block lg:hidden"
+          >
+            Problems trying to resolve<br />
+            the conflict between the two major realms of Classical physics:
+            Newtonian mechanics
+          </p>
+          <p
+            class="text-white text-center leading-snug font-medium text-[14px] tracking-[0.2px] mb-[106px] px-[34px] hidden lg:block"
+          >
+            Problems trying to resolve the conflict between<br />
+            the two major realms of Classical physics: Newtonian mechanics
+          </p>
         </div>
-        <div class="d-flex flex-column align-items-center col-sm-3">
-          <img src="../assets/section-2/icon_list.png" alt="">
-          <p class="text-white mt-4 mb-2 mt-sm-5 mb-sm-3 fw-bold">Set For Life</p>
-          <p class="text-white text-center cardDescription col-8">They were used to create the machines that launched</p>
-        </div>
-        <div class="d-flex flex-column align-items-center col-sm-3">
-          <img src="../assets/section-2/icon_people.png" alt="">
-          <p class="text-white mt-4 mb-2 mt-sm-5 mb-sm-3 fw-bold">100% Satisfaction</p>
-          <p class="text-white text-center cardDescription col-8">So it really behaves like neither. Now we have given up.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section3">
-    <div class="container h-100">
-      <div class="d-flex flex-column justify-content-center gap-4 py-5 align-items-center">
-        <h2 class="fontSize40 text-white fw-bold d-sm-block d-none">Industry</h2>
-        <h2 class="fontSize40 text-white fw-bold d-sm-none d-block">What Clients Say</h2>
-        <p class="text-white w-50 text-center">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
-      </div>
-      <div class="d-flex flex-column flex-sm-row justify-content-center gap-5 align-items-center pb-5">
-        <div class="d-flex flex-column align-items-start col-sm-5 bg-light px-5 py-4 me-sm-4">
-          <div class="d-flex align-items-center gap-4 mb-4">
-            <img src="../assets/section-3/user.1.png" class="mNegative d-none d-sm-block" alt="">
-            <div class="d-flex flex-column justify-content-center">
-              <h3>Regina Miles</h3>
-              <p class="mb-0">Designer</p>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 justify-center">
+          <!-- free -->
+          <div class="mb-4">
+            <div
+              class="flex flex-col items-center bg-white w-full h-full py-[50px] px-[40px] gap-[35px] rounded-[10px] border border-[#23a6f0]"
+            >
+              <h3 class="text-2xl font-bold tracking-[0.1px] mb-0">FREE</h3>
+              <h5
+                class="text-sm font-bold text-center w-3/4 mb-0 tracking-[0.1px] text-[#737373]"
+              >
+                Organize across all apps by hand
+              </h5>
+              <div class="flex items-center gap-2 lg:hidden">
+                <h2
+                  class="text-5xl font-bold tracking-[0.2px] mb-0 text-[#23a6f0]"
+                >
+                  0
+                </h2>
+                <div class="flex flex-col items-start">
+                  <h3
+                    class="text-sm font-bold mb-0 tracking-[0.1px] text-[#23a6f0]"
+                  >
+                    $
+                  </h3>
+                  <h5
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#8ec2f2] text-[14px]"
+                  >
+                    Per Month
+                  </h5>
+                </div>
+              </div>
+              <div class="hidden lg:flex flex-col items-center">
+                <h1
+                  class="text-5xl font-bold mb-0 tracking-[0.2px] text-[#23a6f0]"
+                >
+                  0$
+                </h1>
+                <h5
+                  class="text-sm font-bold mb-0 tracking-[0.1px] text-[#8ec2f2]"
+                >
+                  Per Month
+                </h5>
+              </div>
+              <button
+                type="button"
+                class="w-full max-w-[246px] max-h-[52px] bg-[#23a6f0] font-bold tracking-[0.2px] text-[14px] py-[15px] rounded"
+              >
+                Try for free
+              </button>
+              <div class="flex flex-col items-start gap-3">
+                <div class="flex items-center gap-2">
+                  <img
+                    src="../assets/section-5/green-check.svg"
+                    alt="green-check"
+                  />
+                  <h6
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#252b42] text-[14px]"
+                  >
+                    Unlimited product updates
+                  </h6>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="../assets/section-5/green-check.svg"
+                    alt="green-check"
+                  />
+                  <h6
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#252b42] text-[14px]"
+                  >
+                    Unlimited product updates
+                  </h6>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="../assets/section-5/green-check.svg"
+                    alt="green-check"
+                  />
+                  <h6
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#252b42] text-[14px]"
+                  >
+                    Unlimited product updates
+                  </h6>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="../assets/section-5/gray-check.svg"
+                    alt="gray-check"
+                  />
+                  <h6
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#252b42] text-[14px]"
+                  >
+                    1GB Cloud storage
+                  </h6>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="../assets/section-5/gray-check.svg"
+                    alt="gray-check"
+                  />
+                  <h6
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#252b42] text-[14px]"
+                  >
+                    Email and community support
+                  </h6>
+                </div>
+              </div>
             </div>
           </div>
-          <img src="../assets/section-3/stars.png" alt="">
-          <p class="mt-3 col-11 col-sm-auto">This proved to be impossible using the traditional 
-            concepts of space and time. Einstein developed a 
-            new view of time first and then space. This proved 
-            to be impossible using the traditional concepts of 
-            space and time. Einstein developed a new view 
-            of time first and then space.</p>
-        </div>
-        <div class="d-flex flex-column align-items-start col-sm-5 bg-light px-5 py-4 ms-sm-4">
-          <div class="d-flex align-items-center gap-4 mb-4">
-            <img src="../assets/section-3/user.2.png" class="mNegative d-none d-sm-block" alt="">
-            <div class="d-flex flex-column justify-content-center">
-              <h3>Regina Miles</h3>
-              <p class="mb-0">Designer</p>
+          <!-- silver -->
+          <div class="mb-4">
+            <div
+              class="relative flex flex-col items-center bg-white w-full h-full py-[50px] px-[40px] gap-[35px] rounded-[10px] border border-[#23a6f0]"
+            >
+              <div
+                class="absolute z-10 rounded-full flex justify-center items-center bg-[#e77c40] pt-[29px] pr-[17px] pb-[29px] pl-[16px] w-[90px] h-[90px] left-[68%] top-[-3%]"
+              >
+                <h3
+                  class="text-2xl font-bold mb-0 tracking-[0.1px] text-white text-center"
+                >
+                  New
+                </h3>
+              </div>
+              <h3 class="text-2xl font-bold tracking-[0.1px] mb-0">SILVER</h3>
+              <h5
+                class="text-sm font-bold text-center w-3/4 mb-0 tracking-[0.1px] text-[#737373]"
+              >
+                Organize across all apps by hand
+              </h5>
+              <div class="flex items-center gap-2 lg:hidden">
+                <h2
+                  class="text-5xl font-bold tracking-[0.2px] mb-0 text-[#23a6f0]"
+                >
+                  9.99
+                </h2>
+                <div class="flex flex-col items-start">
+                  <h3
+                    class="text-sm font-bold mb-0 tracking-[0.1px] text-[#23a6f0]"
+                  >
+                    $
+                  </h3>
+                  <h5
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#8ec2f2] text-[14px]"
+                  >
+                    Per Month
+                  </h5>
+                </div>
+              </div>
+              <div class="hidden lg:flex flex-col items-center">
+                <h1
+                  class="text-5xl font-bold mb-0 tracking-[0.2px] text-[#23a6f0]"
+                >
+                  9.99$
+                </h1>
+                <h5
+                  class="text-sm font-bold mb-0 tracking-[0.1px] text-[#8ec2f2]"
+                >
+                  Per Month
+                </h5>
+              </div>
+              <button
+                type="button"
+                class="w-full max-w-[246px] max-h-[52px] bg-[#23a6f0] font-bold tracking-[0.2px] text-[14px] py-[15px] rounded"
+              >
+                Try for free
+              </button>
+              <div class="flex flex-col items-start gap-3">
+                <div class="flex items-center gap-2">
+                  <img
+                    src="../assets/section-5/green-check.svg"
+                    alt="green-check"
+                  />
+                  <h6
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#252b42] text-[14px]"
+                  >
+                    Unlimited product updates
+                  </h6>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="../assets/section-5/green-check.svg"
+                    alt="green-check"
+                  />
+                  <h6
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#252b42] text-[14px]"
+                  >
+                    Unlimited product updates
+                  </h6>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="../assets/section-5/green-check.svg"
+                    alt="green-check"
+                  />
+                  <h6
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#252b42] text-[14px]"
+                  >
+                    Unlimited product updates
+                  </h6>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="../assets/section-5/gray-check.svg"
+                    alt="gray-check"
+                  />
+                  <h6
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#252b42] text-[14px]"
+                  >
+                    1GB Cloud storage
+                  </h6>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="../assets/section-5/gray-check.svg"
+                    alt="gray-check"
+                  />
+                  <h6
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#252b42] text-[14px]"
+                  >
+                    Email and community support
+                  </h6>
+                </div>
+              </div>
             </div>
           </div>
-          <img src="../assets/section-3/stars.png" alt="">
-          <p class="mt-3 col-11 col-sm-auto">This proved to be impossible using the traditional 
-            concepts of space and time. Einstein developed a 
-            new view of time first and then space. This proved 
-            to be impossible using the traditional concepts of 
-            space and time. Einstein developed a new view 
-            of time first and then space.</p>
+          <!-- gold -->
+          <div class="mb-4">
+            <div
+              class="flex flex-col items-center bg-white w-full h-full py-[50px] px-[40px] gap-[35px] rounded-[10px] border border-[#23a6f0]"
+            >
+              <h3 class="text-2xl font-bold tracking-[0.1px] mb-0">GOLD</h3>
+              <h5
+                class="text-sm font-bold text-center w-3/4 mb-0 tracking-[0.1px] text-[#737373]"
+              >
+                Organize across all apps by hand
+              </h5>
+              <div class="flex items-center gap-2 lg:hidden">
+                <h2
+                  class="text-5xl font-bold tracking-[0.2px] mb-0 text-[#23a6f0]"
+                >
+                  19.99
+                </h2>
+                <div class="flex flex-col items-start">
+                  <h3
+                    class="text-sm font-bold mb-0 tracking-[0.1px] text-[#23a6f0]"
+                  >
+                    $
+                  </h3>
+                  <h5
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#8ec2f2] text-[14px]"
+                  >
+                    Per Month
+                  </h5>
+                </div>
+              </div>
+              <div class="hidden lg:flex flex-col items-center">
+                <h1
+                  class="text-5xl font-bold mb-0 tracking-[0.2px] text-[#23a6f0]"
+                >
+                  19.99$
+                </h1>
+                <h5
+                  class="text-sm font-bold mb-0 tracking-[0.1px] text-[#8ec2f2]"
+                >
+                  Per Month
+                </h5>
+              </div>
+              <button
+                type="button"
+                class="w-full max-w-[246px] max-h-[52px] bg-[#23a6f0] font-bold tracking-[0.2px] text-[14px] py-[15px] rounded"
+              >
+                Try for free
+              </button>
+              <div class="flex flex-col items-start gap-3">
+                <div class="flex items-center gap-2">
+                  <img
+                    src="../assets/section-5/green-check.svg"
+                    alt="green-check"
+                  />
+                  <h6
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#252b42] text-[14px]"
+                  >
+                    Unlimited product updates
+                  </h6>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="../assets/section-5/green-check.svg"
+                    alt="green-check"
+                  />
+                  <h6
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#252b42] text-[14px]"
+                  >
+                    Unlimited product updates
+                  </h6>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="../assets/section-5/green-check.svg"
+                    alt="green-check"
+                  />
+                  <h6
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#252b42] text-[14px]"
+                  >
+                    Unlimited product updates
+                  </h6>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="../assets/section-5/gray-check.svg"
+                    alt="gray-check"
+                  />
+                  <h6
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#252b42] text-[14px]"
+                  >
+                    1GB Cloud storage
+                  </h6>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="../assets/section-5/gray-check.svg"
+                    alt="gray-check"
+                  />
+                  <h6
+                    class="font-semibold mb-0 tracking-[0.2px] text-[#252b42] text-[14px]"
+                  >
+                    Email and community support
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Masa Starts here -->
+    </section>
 
-        <!-- section-4 starts from here -->
-
-        <section
-            class="section-4 d-flex flex-column text-center justify-content-center"
-        >
-            <div class="industryContainer">
-                <h2>Industry</h2>
-                <p>
-                    Problems trying to resolve the conflict between the two
-                    major realms of Classial physics: Newtonian mechanics
-                </p>
+    <!-- section-6 -->
+    <section
+      class="relative w-full h-[110vh] py-[50px] px-[195px] bg-[url('../assets/section-6/appointment-bg.svg')] bg-cover bg-center bg-no-repeat overflow-hidden"
+    >
+      <div class="flex flex-col p-0 w-[42%] ml-[-15%]">
+        <div class="my-[40px]">
+          <h5 class="font-bold mb-0 tracking-[0.1px] text-[#252b42]">
+            Contact Us
+          </h5>
+          <h2
+            class="font-bold mb-0 tracking-[0.2px] text-[#252b42] text-[40px]"
+          >
+            Make an Appointment
+          </h2>
+        </div>
+        <div class="flex flex-col gap-[20px]">
+          <div class="flex gap-[20px]">
+            <div class="w-1/2">
+              <input
+                type="text"
+                placeholder="Full Name"
+                disabled
+                class="w-full rounded pl-4 py-0 h-[50px] bg-[#f9f9f9] border border-[#bdbdbd] tracking-[0.2px] text-[14px] font-semibold"
+              />
             </div>
-            <div class="imageSection">
-                <nav>
-                    <ul
-                        class="d-flex align-items-center flex-direction-row justify-content-between"
-                    >
-                        <li class="imageConatiner">
-                            <div>
-                                <img
-                                    src="../assets/section-4/post-1.jpg"
-                                    alt="image1"
-                                    class="Image"
-                                />
-                                <div class="insideImage">
-                                    <p>Tax Management</p>
-                                    <p>
-                                        Life Tips From Top Ten Adventure
-                                        Travelers
-                                    </p>
-                                    <button
-                                        type="button"
-                                        class="btn btn-primary rounded-pill"
-                                    >
-                                        View Project
-                                    </button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="imageConatiner">
-                            <img
-                                src="../assets/section-4/post-2.jpg"
-                                alt="image2"
-                                class="Image"
-                            />
-                            <div class="insideImage">
-                                <p>Tax Management</p>
-                                <p>
-                                    Life Tips From Top Ten Adventure Travelers
-                                </p>
-                                <button
-                                    type="button"
-                                    class="btn btn-primary rounded-pill"
-                                >
-                                    View Project
-                                </button>
-                            </div>
-                        </li>
-                        <li class="imageConatiner">
-                            <img
-                                src="../assets/section-4/post-3.jpg"
-                                alt="image3"
-                                class="Image"
-                            />
-                            <div class="insideImage">
-                                <p>Tax Management</p>
-                                <p>
-                                    Life Tips From Top Ten Adventure Travelers
-                                </p>
-                                <button
-                                    type="button"
-                                    class="btn btn-primary rounded-pill"
-                                >
-                                    View Project
-                                </button>
-                            </div>
-                        </li>
-                        <li class="imageConatiner">
-                            <img
-                                src="../assets/section-4/post-4.jpg"
-                                alt="image4"
-                                class="Image"
-                            />
-                            <div class="insideImage">
-                                <p>Tax Management</p>
-                                <p>
-                                    Life Tips From Top Ten Adventure Travelers
-                                </p>
-                                <button
-                                    type="button"
-                                    class="btn btn-primary rounded-pill"
-                                >
-                                    View Project
-                                </button>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="w-1/2">
+              <input
+                type="email"
+                placeholder="example@gmail.com"
+                disabled
+                class="w-full rounded pl-4 py-0 h-[50px] bg-[#f9f9f9] border border-[#bdbdbd] tracking-[0.2px] text-[14px] font-semibold"
+              />
             </div>
-        </section>
-
-        <!-- section-5 starts from here -->
-
-        <section class="section-5 d-flex flex-column text-center">
-            <div class="priceSection d-flex flex-column align-items-center">
-                <h2>Pricing</h2>
-                <p>
-                    Problems trying to resolve the conflict between the two
-                    major realms of Classial physics: Newtonian mechanics
-                </p>
+          </div>
+          <div class="flex flex-col gap-[20px]">
+            <div class="relative w-1/2">
+              <input
+                type="none"
+                placeholder="Please Select"
+                disabled
+                class="w-full rounded pl-4 py-0 h-[50px] bg-[#f9f9f9] border border-[#bdbdbd] tracking-[0.2px] text-[14px] font-semibold"
+              />
+              <img
+                src="../assets/section-6/vector.svg"
+                alt="vector"
+                class="absolute top-1/2 left-[90%] -translate-y-1/2 pointer-events-none"
+              />
             </div>
-            <div
-                class="priceContainer d-flex flex-row align-items-center justify-content-center"
-                style="gap: 30px"
+            <div class="relative w-1/2">
+              <input
+                type="none"
+                placeholder="4:00 Available"
+                disabled
+                class="w-full rounded pl-4 py-0 h-[50px] bg-[#f9f9f9] border border-[#bdbdbd] tracking-[0.2px] text-[14px] font-semibold"
+              />
+              <img
+                src="../assets/section-6/vector.svg"
+                alt="vector"
+                class="absolute top-1/2 left-[90%] -translate-y-1/2 pointer-events-none"
+              />
+            </div>
+          </div>
+          <div>
+            <textarea
+              rows="5"
+              cols="30"
+              placeholder="Message"
+              disabled
+              class="w-full rounded pl-4 pt-3 font-semibold leading-normal bg-[#f9f9f9] border border-[#bdbdbd] tracking-[0.2px] text-[14px] resize-none"
+            ></textarea>
+          </div>
+        </div>
+        <div class="my-[40px] w-[38%]">
+          <button
+            type="button"
+            class="w-full rounded border-0 font-bold leading-normal bg-[#23a6f0] tracking-[0.2px] py-[15px] px-[40px] text-[14px]"
+          >
+            Book Appointment
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div
+        class="flex flex-col lg:flex-row gap-[50px] justify-between items-start py-[40px] px-[88px] lg:px-[195px]"
+      >
+        <div>
+          <h3
+            class="text-xl font-bold leading-tight mb-[10px] text-[#252b42] tracking-[0.1px]"
+          >
+            Consulting Agency For Your Business
+          </h3>
+          <p
+            class="w-3/4 font-medium leading-normal mb-0 text-[#252b42] text-[14px] tracking-[0.2px]"
+          >
+            the quick fox jumps over the lazy dog
+          </p>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="bg-[#23a6f0] tracking-[0.2px] py-[15px] px-[40px] w-[164px] h-[52px] text-[14px] font-bold leading-normal rounded border-0 mr-[38px]"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-[#252b42] py-[50px] px-[88px] lg:px-[195px]">
+        <div class="flex flex-col lg:flex-row flex-colgap-[30px]">
+          <!-- Company Info -->
+          <div class="flex flex-col gap-[20px] mr-[35px]">
+            <h5
+              class="mb-0 text-white font-bold leading-normal tracking-[0.1px]"
             >
-                <div class="priceCard">
-                    <h2>FREE</h2>
-                    <p>Organise across all apps by hand</p>
-                    <div>
-                        <h3>0$</h3>
-                        <p>Per Month</p>
-                    </div>
-                    <div class="btn btn-primary">Try for free</div>
-                    <ul>
-                        <li>
-                            <img
-                                src="../assets/section-5/icon_check_green.png"
-                                alt="check_green"
-                            />Unlimited product updates
-                        </li>
-                        <li>
-                            <img
-                                src="../assets/section-5/icon_check_green.png"
-                                alt="check_green"
-                            />Unlimited product updates
-                        </li>
-                        <li>
-                            <img
-                                src="../assets/section-5/icon_check_green.png"
-                                alt="check_green"
-                            />Unlimited product updates
-                        </li>
-                        <li>
-                            <img
-                                src="../assets/section-5/icon_check_gray.png"
-                                alt="check_gray"
-                            />1GB Cloud storage
-                        </li>
-                        <li>
-                            <img
-                                src="../assets/section-5/icon_check_gray.png"
-                                alt="check_gray"
-                            />Email and community support
-                        </li>
-                    </ul>
-                </div>
-                <div class="priceCard">
-                    <h2>SILVER</h2>
-                    <p>Organise across all apps by hand</p>
-                    <div>
-                        <h3>9.99$</h3>
-                        <p>Per Month</p>
-                    </div>
-                    <div class="btn btn-primary">Try for free</div>
-                    <ul>
-                        <li>
-                            <img
-                                src="../assets/section-5/icon_check_green.png"
-                                alt="check_green"
-                            />Unlimited product updates
-                        </li>
-                        <li>
-                            <img
-                                src="../assets/section-5/icon_check_green.png"
-                                alt="check_green"
-                            />Unlimited product updates
-                        </li>
-                        <li>
-                            <img
-                                src="../assets/section-5/icon_check_green.png"
-                                alt="check_green"
-                            />Unlimited product updates
-                        </li>
-                        <li>
-                            <img
-                                src="../assets/section-5/icon_check_gray.png"
-                                alt="check_gray"
-                            />1GB Cloud storage
-                        </li>
-                        <li>
-                            <img
-                                src="../assets/section-5/icon_check_gray.png"
-                                alt="check_gray"
-                            />Email and community support
-                        </li>
-                    </ul>
-                </div>
-                <div class="priceCard">
-                    <h2>GOLD</h2>
-                    <p>Organise across all apps by hand</p>
-                    <div>
-                        <h3>19.99$</h3>
-                        <p>Per Month</p>
-                    </div>
-                    <div class="btn btn-primary">Try for free</div>
-                    <ul>
-                        <li>
-                            <img
-                                src="../assets/section-5/icon_check_green.png"
-                                alt="check_green"
-                            />Unlimited product updates
-                        </li>
-                        <li>
-                            <img
-                                src="../assets/section-5/icon_check_green.png"
-                                alt="check_green"
-                            />Unlimited product updates
-                        </li>
-                        <li>
-                            <img
-                                src="../assets/section-5/icon_check_green.png"
-                                alt="check_green"
-                            />Unlimited product updates
-                        </li>
-                        <li>
-                            <img
-                                src="../assets/section-5/icon_check_gray.png"
-                                alt="check_gray"
-                            />1GB Cloud storage
-                        </li>
-                        <li>
-                            <img
-                                src="../assets/section-5/icon_check_gray.png"
-                                alt="check_gray"
-                            />Email and community support
-                        </li>
-                    </ul>
-                </div>
+              Company Info
+            </h5>
+            <div class="flex flex-col gap-[10px]">
+              <p
+                class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+              >
+                About Us
+              </p>
+              <p
+                class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+              >
+                Carrier
+              </p>
+              <p
+                class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+              >
+                We are hiring
+              </p>
+              <p
+                class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+              >
+                Blog
+              </p>
             </div>
-        </section>
-
-        <!-- section-6 starts from here -->
-
-        <section class="section-6">
-            <div class="contacusContainer">
-                <p>Contact Us</p>
-                <h2>Make an Appointment</h2>
-            </div>
-            <div class="gridContainer">
-                <div class="row">
-                    <div>
-                        <input
-                            type="text"
-                            placeholder="Full Name"
-                            id="nameBox"
-                            class="col-md-6"
-                        />
-                        <label for="nameBox" class="labelnameBox"></label>
-                    </div>
-                    <div>
-                        <input
-                            type="text"
-                            id="emailBox"
-                            placeholder="Email"
-                            class="col-md-6"
-                        />
-                        <label for="emailBox" class="labelemailBox"></label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div>
-                        <label for="selector" class="labelSelector"></label>
-                        <select name="selector" id="selector" class="col-md-6">
-                            <option value="#">option-1</option>
-                            <option value="#">option-2</option>
-                            <option value="#">option-3</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label
-                            for="timeSeletor"
-                            class="labeltimeSelector"
-                        ></label>
-                        <select
-                            name="timeSelector"
-                            id="timeSelector"
-                            class="col-md-6"
-                        >
-                            <option value="1:00_available">
-                                1:00 available
-                            </option>
-                            <option value="2:00_available">
-                                2:00 available
-                            </option>
-                            <option value="3:00_available">
-                                3:00 available
-                            </option>
-                        </select>
-                    </div>
-                    <div class="row">
-                        <div>
-                            <textarea
-                                name="text"
-                                id="textArea"
-                                placeholder="Message"
-                                class="col-md-12"
-                            ></textarea>
-                            <label for="textArea" class="textArea"></label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="appointmentBtn">
-                <button type="button" class="btn btn-primary">
-                    Book Appointment
-                </button>
-            </div>
-        </section>
-
-        <!-- Footer part starts from here -->
-
-        <section class="footer">
-            <div
-                class="upperContainer d-flex justify-content-between align-items-center"
-                style="padding: 0px 195px"
+          </div>
+          <!-- Legal -->
+          <div class="flex flex-col gap-[20px] mr-[65px]">
+            <h5
+              class="mb-0 text-white font-bold leading-normal tracking-[0.1px]"
             >
-                <div>
-                    <h2>Consulting Agency For Your Business</h2>
-                    <p>The quick fox jumps over the lazy dog</p>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-primary">
-                        Contact Us
-                    </button>
-                </div>
+              Legal
+            </h5>
+            <div class="flex flex-col gap-[10px]">
+              <p
+                class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+              >
+                About Us
+              </p>
+              <p
+                class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+              >
+                Carrier
+              </p>
+              <p
+                class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+              >
+                We are hiring
+              </p>
+              <p
+                class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+              >
+                Blog
+              </p>
             </div>
-            <div class="middleContainer d-flex">
-                <nav class="CompanyInfo h4">
-                    <ul>
-                        Company Info
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Carrier</a></li>
-                        <li><a href="#">We are hiring</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </nav>
-                <nav class="Legal h4">
-                    <ul>
-                        Legal
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Carrier</a></li>
-                        <li><a href="#">We are hiring</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </nav>
-                <nav class="Features h4">
-                    <ul>
-                        Features
-                        <li><a href="#">Business Marketing</a></li>
-                        <li><a href="#">User Analytic</a></li>
-                        <li><a href="#">Live Chat</a></li>
-                        <li><a href="#">Unlimited Support</a></li>
-                    </ul>
-                </nav>
-                <nav class="Resources h4">
-                    <ul>
-                        Resources
-                        <li><a href="#">IOS & Android</a></li>
-                        <li><a href="#">Watch a Demo</a></li>
-                        <li><a href="#">Customers</a></li>
-                        <li><a href="#">API</a></li>
-                    </ul>
-                </nav>
-                <nav class="getinTouch h4">
-                    <ul>
-                        Get In Touch
-                        <li>
-                            <img
-                                src="../assets/footer/bx_bx-phone.png"
-                                alt="icon_phone"
-                            />(480) 555-0103
-                        </li>
-                        <li>
-                            <img
-                                src="../assets/footer/bx_bx-map.png"
-                                alt="icon_map"
-                            />4517 Washington Ave.
-                        </li>
-                        <li>
-                            <img
-                                src="../assets/footer/carbon_send-alt.png"
-                                alt="icon_letter"
-                            />debra.holt@example.com
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div
-                class="lowerContainer d-flex justify-content-between"
-                style="padding: 0px 195px"
+          </div>
+          <!-- Features -->
+          <div class="flex flex-col gap-[20px]">
+            <h5
+              class="mb-0 text-white font-bold leading-normal tracking-[0.1px]"
             >
-                <div><p>Made With Love By Figmaland All Right Reserved</p></div>
-                <div>
-                    <img
-                        src="../assets/footer/facebook.png"
-                        alt="blue-color-facebook"
-                    />
-                    <img
-                        src="../assets/footer/instagram.png"
-                        alt="blue-color-instagram"
-                    />
-                    <img src="../assets/footer/twitter.png" alt="twitter" />
-                </div>
+              Features
+            </h5>
+            <div class="flex flex-col gap-[10px]">
+              <p
+                class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+              >
+                Business Marketing
+              </p>
+              <p
+                class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+              >
+                User Analytic
+              </p>
+              <p
+                class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+              >
+                Live Chat
+              </p>
+              <p
+                class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+              >
+                Unlimited Support
+              </p>
             </div>
-        </section>
+          </div>
+          <!-- Resources -->
+          <div class="flex flex-col gap-[20px] mr-[45px]">
+            <h5
+              class="mb-0 text-white font-bold leading-normal tracking-[0.1px]"
+            >
+              Resources
+            </h5>
+            <div class="flex flex-col gap-[10px]">
+              <p
+                class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+              >
+                IOS & Android
+              </p>
+              <p
+                class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+              >
+                Watch a Demo
+              </p>
+              <p
+                class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+              >
+                Customers
+              </p>
+              <p
+                class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+              >
+                API
+              </p>
+            </div>
+          </div>
+          <!-- Get In Touch -->
+          <div class="flex flex-col gap-[20px]">
+            <h5
+              class="mb-0 text-white font-bold leading-normal tracking-[0.1px]"
+            >
+              Get In Touch
+            </h5>
+            <div class="flex flex-col gap-[10px]">
+              <div class="flex gap-[10px]">
+                <img
+                  src="../assets/footer/blue-phone.svg"
+                  alt="blue-phone"
+                  class="block lg:hidden"
+                />
+                <img
+                  src="../assets/footer/white-phone.svg"
+                  alt="white-phone"
+                  class="hidden lg:block"
+                />
+                <h6
+                  class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+                >
+                  (480) 555-0103
+                </h6>
+              </div>
+              <div class="flex gap-[10px]">
+                <img
+                  src="../assets/footer/blue-location.svg"
+                  alt="blue-location"
+                  class="block lg:hidden"
+                />
+                <img
+                  src="../assets/footer/white-location.svg"
+                  alt="white-location"
+                  class="hidden lg:block"
+                />
+                <h6
+                  class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+                >
+                  4517 Washington Ave.
+                </h6>
+              </div>
+              <div class="flex gap-[10px]">
+                <img
+                  src="../assets/footer/blue-send.svg"
+                  alt="blue-send"
+                  class="block lg:hidden"
+                />
+                <img
+                  src="../assets/footer/white-send.svg"
+                  alt="white-send"
+                  class="hidden lg:block"
+                />
+                <h6
+                  class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+                >
+                  debra.holt@example.com
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"
-        ></script>
-    </body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+      <!-- mobile Copy Link Footer -->
+      <div class="block lg:hidden bg-[#252b42] py-[25px] px-[88px]">
+        <div class="flex flex-col gap-[50px]">
+          <div>
+            <h6
+              class="mb-0 font-semibold leading-normal text-white tracking-[0.2px] text-[14px]"
+            >
+              Made With Love By Figmaland All Right Reserved
+            </h6>
+          </div>
+          <div class="flex gap-[20px]">
+            <img
+              src="../assets/footer/color-facebook.svg"
+              alt="color-facebook"
+            />
+            <img
+              src="../assets/footer/color-instagram.svg"
+              alt="color-instagram"
+            />
+            <img src="../assets/footer/color-twitter.svg" alt="color-twitter" />
+            <img src="../assets/footer/color-youtube.svg" alt="color-youtube" />
+          </div>
+        </div>
+      </div>
+
+      <!-- desktop Copy Link Footer -->
+      <div class="hidden lg:block bg-[#fafafa] py-[25px] px-[195px]">
+        <div class="flex justify-between">
+          <h6
+            class="mb-0 font-semibold leading-normal tracking-[0.2px] text-[14px] text-[#737373]"
+          >
+            Made With Love By Figmaland All Right Reserved
+          </h6>
+          <div class="flex gap-[20px] mr-[70px]">
+            <img src="../assets/footer/blue-facebook.svg" alt="blue-facebook" />
+            <img
+              src="../assets/footer/blue-instagram.svg"
+              alt="blue-instagram"
+            />
+            <img src="../assets/footer/blue-twitter.svg" alt="blue-twitter" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
+
+<!-- tailwind : input이나 textarea의 placeholder 글자색 바꾸기 class="placeholder-[#bdbdbd]" -->
